@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>According List</title>
+</head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+
+  .container {
+    max-width: 30rem;
+    padding: .5rem;
+    height: auto;
+    background: cyan;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin: 5rem auto;
+    border-radius: .4rem;
+  }
+
+  #contant {
+    background: transparent;
+    text-decoration: dotted;
+    text-transform: uppercase;
+    text-shadow: 2px 1px red;
+  }
+
+  div h1 {
+    width: 100%;
+    background: #000;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    cursor: pointer;
+    border-radius: calc(10px);
+
+  }
+
+  div h1:hover {
+    background: rgb(89, 0, 179);
+
+  }
+
+  div h1:active {
+    color: red;
+    box-shadow: 1px 1px red;
+
+  }
+
+  .demo1,
+  .demo2,
+  .demo3 {
+    text-align: justify;
+    color: rgb(25, 0, 255);
+    display: none;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div class="hero">
+      <h1 id="contant">According List</h1>
+      <div>
+        <h1 id="div-1">Div one</h1>
+        <p class="demo1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit enim architecto
+          tempora atque. Omnis ducimus iste architecto enim. Rem consectetur autem maiores pariatur et
+          odit, quasi animi nesciunt delectus debitis?
+        </p>
+      </div>
+      <div>
+        <h1 id="div2">Div two</h1>
+        <p class="demo2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit enim architecto
+          tempora atque. Omnis ducimus iste architecto enim. Rem consectetur autem maiores pariatur et
+          odit, quasi animi nesciunt delectus debitis?
+        </p>
+      </div>
+      <div>
+        <h1 id="div3">div three</h1>
+        <p class="demo3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit enim architecto
+          tempora atque. Omnis ducimus iste architecto enim. Rem consectetur autem maiores pariatur et
+          odit, quasi animi nesciunt delectus debitis?
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const a = document.querySelector("#div-1");
+    const b = document.querySelector("#div2");
+    const c = document.querySelector("#div3");
+    const demo1 = document.querySelector('.demo1');
+    const demo2 = document.querySelector('.demo2');
+    const demo3 = document.querySelector('.demo3');
+    a.addEventListener('click', function () {
+
+      if (demo1.style.display === 'none') {
+        demo1.style.display = 'block';
+      } else {
+        demo1.style.display = 'none';
+      }
+
+    })
+    b.addEventListener('click', function () {
+
+      if (demo2.style.display === 'none') {
+        demo2.style.display = 'block';
+      } else {
+        demo2.style.display = 'none';
+      }
+
+    })
+    c.addEventListener('click', function () {
+
+      if (demo3.style.display === 'none') {
+        demo3.style.display = 'block';
+      } else {
+        demo3.style.display = 'none';
+      }
+
+    })
+  </script>
+
+</body>
+
+</html>
